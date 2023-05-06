@@ -1,0 +1,12 @@
+@import '../../scss/variables';
+
+.posts {
+	&_list {
+		display: flex;
+		flex-wrap: wrap;
+		.post_wrapper {
+			width: calc(25% - ($item_spacing * 2));
+			margin:$item_spacing;
+		}
+	}
+}
