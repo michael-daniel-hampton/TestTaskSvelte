@@ -3,9 +3,12 @@
 	import Posts from '$lib/posts/posts.svelte';
 	export let data: PageData;
 	//console.log(data);
-	
-
-
 </script>
 
-<Posts all_posts={data.dataArr} page_size={8} />
+<div class="pt-section pb-section">
+	<Posts all_posts={data.dataArr} page_size={8} />
+</div>
+
+<style lang="scss">
+@import '../../scss/global.scss';
+</style>

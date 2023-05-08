@@ -1,8 +1,12 @@
-@import '../../scss/variables'; //TODO: Globally import to whole app using Global.scss
+@import '../../scss/global.scss'; //TODO: Globally import to whole app using Global.scss
 
-.header {
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
-	padding: $default_padding;
+.header_wrapper {
+	box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.05);
+
+	.header {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		padding: $default_padding 0;
+	}
 }

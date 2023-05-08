@@ -7,7 +7,9 @@ export const load = (async ({ fetch, params }) => {
 	if (isNaN(id)) {
 		throw new Error('A valid integer is expected');
 	}
-	let err = 'API Call Failed'
+
+	//Call
+	let err = 'API Call Failed';
 	try {
 		const res = await fetch(`${PUBLIC_API_BASE}/posts/${params.id}`);
 		const data = await res.json();
@@ -16,7 +18,7 @@ export const load = (async ({ fetch, params }) => {
 			return data;
 		} else {
 			err = 'Empty Object';
-			throw new Error(err)
+			throw new Error(err);
 		}
 	} catch {
 		throw new Error(err);

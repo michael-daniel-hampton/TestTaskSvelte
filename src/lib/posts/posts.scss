@@ -1,12 +1,26 @@
-@import '../../scss/variables';
+@import '../../scss/global.scss'; //TODO: Globally import to whole app using Global.scss
 
 .posts {
 	&_list {
 		display: flex;
 		flex-wrap: wrap;
-		.post_wrapper {
-			width: calc(25% - ($item_spacing * 2));
-			margin:$item_spacing;
+	}
+	&_wrapper {
+		padding: $default_padding;
+		margin: $item_spacing;
+		box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s;
+
+
+		@include media-breakpoint-up(md){
+			flex-basis:calc(25% - ($item_spacing * 6));
+
+		}
+
+		&:hover {
+			box-shadow: 0 5px 8px 0px rgba(0, 0, 0, 0.05);
+			transform: translateY(-3px);
+			transition: all 0.3s;
 		}
 	}
 }

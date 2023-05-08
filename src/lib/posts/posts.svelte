@@ -15,13 +15,15 @@
 <div class="posts_section">
 	<div class="posts_list">
 		{#each posts as post}
-			<div class="post_wrapper">
-				<Post {post} />
-			</div>
+			<a class="posts_wrapper" href={`/posts/${post.id}`}>
+					<Post {post} trunc={100} />
+			</a>
 		{/each}
 	</div>
 	{#if more_page}
-		<button on:click={loadMore}>Load More</button>
+	<div class="w-100 text-center pt-section">
+		<span class="btn_blue_pill" on:click={loadMore}>Load More</span>
+	</div>
 	{/if}
 </div>
 

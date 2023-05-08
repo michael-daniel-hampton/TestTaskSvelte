@@ -1,3 +1,14 @@
 $default_padding: 1rem;
-$item_spacing: 0.5rem;
 $max-width-contain:80%;
+$item_spacing: 0.5rem;
+$section_spacing: 3rem;
+
+
+$media-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
