@@ -1,2 +1,3 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+	<h1>Instructions</h1>
+	<p>1. Go to the 'Posts' link in the top right for a list of posts pulled from thr test API.</p>
+	<p>2. Select a post from the page to view further details</p>

@@ -1,0 +1,8 @@
+@import '../../scss/variables'; //TODO: Globally import to whole app using Global.scss
+
+.header {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	padding: $default_padding;
+}
