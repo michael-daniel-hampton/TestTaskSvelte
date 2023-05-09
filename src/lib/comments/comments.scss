@@ -3,7 +3,7 @@
 .comments {
 	&_item {
 		padding: $default_padding;
-		box-shadow: $default_box_shadow_values;
+		box-shadow: $item_box_shadow_values;
 		margin: $item_spacing 0;
 	}
 }
