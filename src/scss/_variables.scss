@@ -2,7 +2,10 @@ $default_padding: 1rem;
 $max-width-contain:80%;
 $item_spacing: 0.5rem;
 $section_spacing: 3rem;
+$between_spacing: 1.5rem;
 
+$item_box_shadow_values: 0 1px 8px 0px rgba(0, 0, 0, 0.05);
+$item_box_shadow_values_hover:0 5px 8px 0px rgba(0, 0, 0, 0.05);
 
 $media-breakpoints: (
   xs: 0,

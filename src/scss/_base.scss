@@ -12,6 +12,13 @@ a {
 	}
 }
 
+hr{
+    margin:0;
+    border: 0;
+    border-top: 1px solid rgba($blue, 0.5);
+    opacity: 0.5;
+}
+
 .contain {
     @include media-breakpoint-up(md){
         max-width: $max-width-contain;
@@ -28,6 +35,15 @@ a {
 .pb-section {
 	padding-bottom: $section_spacing;
 }
+.pb-between{
+	padding-bottom: $between_spacing;
+
+}
+.pt-between{
+	padding-top: $between_spacing;
+
+}
+
 
 .w-100 {
 	width: 100%;

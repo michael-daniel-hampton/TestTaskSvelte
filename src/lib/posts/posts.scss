@@ -8,7 +8,7 @@
 	&_wrapper {
 		padding: $default_padding;
 		margin: $item_spacing;
-		box-shadow: 0 1px 8px 0px rgba(0, 0, 0, 0.05);
+		box-shadow: $item_box_shadow_values;
 		transition: all 0.3s;
 
 
@@ -18,7 +18,7 @@
 		}
 
 		&:hover {
-			box-shadow: 0 5px 8px 0px rgba(0, 0, 0, 0.05);
+			box-shadow: $item_box_shadow_values_hover;
 			transform: translateY(-3px);
 			transition: all 0.3s;
 		}

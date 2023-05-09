@@ -8,14 +8,23 @@ export const load = (async ({ fetch, params }) => {
 		throw new Error('A valid integer is expected');
 	}
 
-	//Call
+	//Post Call
 	let err = 'API Call Failed';
 	try {
 		const res = await fetch(`${PUBLIC_API_BASE}/posts/${params.id}`);
 		const data = await res.json();
 
 		if (Object.keys(data).length > 0) {
-			return data;
+			let comments = null;
+			try {
+				const CommentRes = await fetch(`${PUBLIC_API_BASE}/posts/${params.id}/comments`);
+				const CommentData = await CommentRes.json();
+				comments = CommentData;
+			} catch {
+				throw new Error(err);
+			}
+
+			return { data: data, comments: comments };
 		} else {
 			err = 'Empty Object';
 			throw new Error(err);
